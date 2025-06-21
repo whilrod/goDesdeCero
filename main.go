@@ -2,14 +2,13 @@ package main
 
 import (
 	"fmt"
-	"runtime"
 
-	"github.com/whilrod/goDesdeCero/variables"
+	"github.com/whilrod/goDesdeCero/ejercicios"
 )
 
 func main() {
 	fmt.Println("Hola mundo")
-	variables.MuestroEnteros()
+	/* variables.MuestroEnteros()
 	variables.RestoVariables()
 	estado, texto := variables.ConviertoATexto(654767)
 	fmt.Println(estado)
@@ -27,5 +26,8 @@ func main() {
 		fmt.Printf("Esto es %s \n", os)
 	default:
 		fmt.Printf("Esto es %s \n", os)
-	}
+	} */
+	numeroInt, texto := ejercicios.DevuelveDosValores("89798987")
+	fmt.Println(numeroInt)
+	fmt.Println(texto)
 }
