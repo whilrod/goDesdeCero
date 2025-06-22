@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/whilrod/goDesdeCero/teclado"
+	"github.com/whilrod/goDesdeCero/iteraciones"
 )
 
 func main() {
@@ -31,5 +31,6 @@ func main() {
 	fmt.Println(numeroInt)
 	fmt.Println(texto) */
 
-	teclado.IngresoNumeros()
+	//teclado.IngresoNumeros()
+	iteraciones.Iterar()
 }
