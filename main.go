@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/whilrod/goDesdeCero/ejercicios"
+	"github.com/whilrod/goDesdeCero/teclado"
 )
 
 func main() {
@@ -27,7 +27,9 @@ func main() {
 	default:
 		fmt.Printf("Esto es %s \n", os)
 	} */
-	numeroInt, texto := ejercicios.DevuelveDosValores("89798987")
+	/* numeroInt, texto := ejercicios.DevuelveDosValores("89798987")
 	fmt.Println(numeroInt)
-	fmt.Println(texto)
+	fmt.Println(texto) */
+
+	teclado.IngresoNumeros()
 }
