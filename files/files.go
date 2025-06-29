@@ -1,6 +1,7 @@
 package files
 
 import (
+	"bufio"
 	"fmt"
 	"os"
 
@@ -53,4 +54,19 @@ func LeoArchivo() {
 	}
 
 	fmt.Println(string(archivo))
+}
+
+func LeoArchivoMetodo2() {
+	archivo, err := os.Open(fileName)
+	if err != nil {
+		fmt.Println("Error al leer el archivo" + err.Error())
+		return
+	}
+
+	scanner := bufio.NewScanner(archivo)
+	for scanner.Scan() {
+		registro := scanner.Text()
+		fmt.Println("> " + registro)
+	}
+	archivo.Close()
 }

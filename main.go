@@ -38,5 +38,6 @@ func main() {
 	//files.GrabaTabla()
 	//files.SumaTabla()
 	//files.LeoArchivo()
-	files.LeoArchivo()
+	//files.LeoArchivo()
+	files.LeoArchivoMetodo2()
 }
