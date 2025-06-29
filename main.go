@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/whilrod/goDesdeCero/ejercicios"
+	"github.com/whilrod/goDesdeCero/files"
 )
 
 func main() {
@@ -33,5 +33,10 @@ func main() {
 
 	//teclado.IngresoNumeros()
 	//iteraciones.Iterar()
-	ejercicios.PideNumero()
+	//ejercicios.PideNumero()
+	//fmt.Println(ejercicios.PideNumero())
+	//files.GrabaTabla()
+	//files.SumaTabla()
+	//files.LeoArchivo()
+	files.LeoArchivo()
 }

@@ -7,10 +7,11 @@ import (
 	"strconv"
 )
 
-func PideNumero() {
+func PideNumero() string {
 	scanner := bufio.NewScanner(os.Stdin)
 	var numero int
 	var err error
+	var texto string
 	for {
 		fmt.Println("Ingresa el numero: ")
 		if scanner.Scan() {
@@ -25,8 +26,12 @@ func PideNumero() {
 	}
 
 	fmt.Printf("Tabla del %d \n\n", numero)
+	texto = fmt.Sprintf("Tabla del %d \n\n", numero)
+
 	for i := 1; i <= 10; i++ {
 		//fmt.Println(numero + "X " + i + "= " + numero*i)
-		fmt.Printf("%d X %d = %d \n", numero, i, numero*i)
+		texto += fmt.Sprintf("%d X %d = %d \n", numero, i, numero*i)
 	}
+	texto += "\n"
+	return texto
 }
