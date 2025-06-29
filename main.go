@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/whilrod/goDesdeCero/files"
+	"github.com/whilrod/goDesdeCero/funciones"
 )
 
 func main() {
@@ -39,5 +39,6 @@ func main() {
 	//files.SumaTabla()
 	//files.LeoArchivo()
 	//files.LeoArchivo()
-	files.LeoArchivoMetodo2()
+	//files.LeoArchivoMetodo2()
+	funciones.Calculos()
 }
