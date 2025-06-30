@@ -40,5 +40,6 @@ func main() {
 	//files.LeoArchivo()
 	//files.LeoArchivo()
 	//files.LeoArchivoMetodo2()
-	funciones.Calculos()
+	//funciones.Calculos()
+	funciones.LlamarClosure()
 }
